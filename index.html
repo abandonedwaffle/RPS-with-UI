@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head> 
 <body>
-    
+    <h1>A Simple Rock Paper Scissor Game</h1> 
+    <div class="buttonChoices">
+        <button onclick="playGame('rock')">
+            <img src="./images/the-rock-dwayne-johnson-wwe-wtu.png" alt="The Rock literally standing!">
+        </button>
+        <button onclick="playGame('paper')">
+            <img src="./images/0b41253a4041ddb57004d633e4979430.jpg" alt="A piece of rinkled Paper!">
+        </button>
+        <button onclick="playGame('scissor')">
+            <img src="./images/scssrblunt2-550x550.jpg" alt="A picture of Scissor">
+        </button>
+    </div>
+    <div id="playerDisplay">PLAYER SELECTED: </div>
+    <div id="computerDisplay">COMPUTER SELECTED: </div>
+    <div id="resultDisplay"></div>
 </body>
 </html>
